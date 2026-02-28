@@ -59,11 +59,12 @@ The objective is to simulate a real-world retail analytics workflow:
 ### Feature Engineering
 - Created `total = unit_price × quantity`
 
-### Load Data into MySQL
+### 5️⃣ Load Data into MySQL
 
 ```python
 engine_mysql = create_engine("mysql+pymysql://root:YOUR_PASSWORD@localhost:3306/walmart")
-df.to_sql(name="walmart_table", con=engine_mysql, if_exists="append", index=False)
+df.to_sql(name="walmart_table", con=engine_mysql, if_exists="append", index=False) python
+```
 
 ## SQL Business Analysis
 
